@@ -14,8 +14,7 @@ public class Main {
         System.out.println("-----");
         System.out.println("1|2|3");
         String[] board = new String[10];
-        while(i < 10) {
-            board[i] = " ";
+        while(i < 10) { board[i] = " "; i++; }
         System.out.println("Let's play tic-tac-toe");
         showBoard(board);
         i = 0;
