@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int i = 1;
         String p1 = "X";
         String p2 = "O";
         Scanner scanner = new Scanner(System.in);
@@ -13,18 +14,12 @@ public class Main {
         System.out.println("-----");
         System.out.println("1|2|3");
         String[] board = new String[10];
-        board[1] = " ";
-        board[2] = " ";
-        board[3] = " ";
-        board[4] = " ";
-        board[5] = " ";
-        board[6] = " ";
-        board[7] = " ";
-        board[8] = " ";
-        board[9] = " ";
+        while(i < 10) {
+            board[i] = " ";
         System.out.println("Let's play tic-tac-toe");
         showBoard(board);
-        for (int i = 0; i < 9;) {
+        i = 0;
+        for (i = 0; i < 9;) {
             if(i%2==0) {
                 System.out.println("Player 1 - X, where would you like your piece to go?");
                 int placement = scanner.nextInt();
